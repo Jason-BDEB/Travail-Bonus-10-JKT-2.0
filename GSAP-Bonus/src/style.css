@@ -19,3 +19,15 @@ body
 .background2 {background-color: rgb(255, 121, 121);}
 .background3 {background-color: rgb(255, 0, 0);}
 .background4 {background-color: rgb(34, 34, 34);}
+
+.text {
+  position: absolute;
+  top: 50%;
+  justify-self: center;
+  margin: 0%;
+  opacity: 1;
+  font-family: 'Arial', sans-serif;
+  color: rgb(255, 0, 0);
+  font-size: 5vw;
+  z-index: 10;
+}
