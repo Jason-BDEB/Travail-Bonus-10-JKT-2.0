@@ -1,0 +1,21 @@
+body 
+{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background1, .background2, .background3, .background4 
+{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  right: 100%;
+}
+
+.background1 {background-color: rgb(255, 171, 171);}
+.background2 {background-color: rgb(255, 121, 121);}
+.background3 {background-color: rgb(255, 0, 0);}
+.background4 {background-color: rgb(34, 34, 34);}
