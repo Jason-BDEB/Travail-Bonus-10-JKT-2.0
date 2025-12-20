@@ -10,6 +10,8 @@ const backgroundElements = backgroundList.map(element => document.querySelector(
 gsap.registerPlugin(SplitText);
 let split = SplitText.create(".text", { type: "words, lines, chars" });
 
+function getRandomFromRange(min, max) {return Math.random() * (max - min) + min;}
+
 async function playAnimation() 
 {
   gsap.set(".text", { opacity: 0 });
@@ -33,6 +35,33 @@ async function playAnimation()
       duration: 1,
       ease: "back.out(1.7)"
     });
+
+   ballAnimation(2);
+};
+
+async function ballAnimation(index) 
+{
+  for (let i = 0; i < index; i++) 
+  {
+    let ball = document.createElement('div');
+    ball.classList.add('ball');
+    document.body.appendChild(ball);
+    playBall(ball);
+    await delay(1000);
+  }
+};
+
+async function playBall(ball) 
+{
+  await delay(1000);
+  ball.style.left = getRandomFromRange(10, 90) + "vw";
+  ball.style.top = "100%";
+  gsap.to(ball, {
+    top: -150,
+    duration: 2,
+    ease: "power2.out",
+    onComplete: () => {playBall(ball);}
+  });
 };
 
 playAnimation();

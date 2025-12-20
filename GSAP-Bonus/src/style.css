@@ -31,3 +31,14 @@ body
   font-size: 5vw;
   z-index: 10;
 }
+
+.ball {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 100%;
+  background-color: rgb(160, 0, 0);
+  z-index: 5;
+}
