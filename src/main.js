@@ -1,5 +1,6 @@
 import { SplitText } from "gsap/SplitText";
 import { gsap } from "gsap";
+gsap.registerPlugin(SplitText);
 import './style.css';
 
 // Fonction permettant de créer un délai
@@ -10,7 +11,6 @@ const backgroundList = ['.background1', '.background2', '.background3', '.backgr
 const backgroundElements = backgroundList.map(element => document.querySelector(element));
 
 // Register SplitText plugin
-gsap.registerPlugin(SplitText);
 let split = SplitText.create(".text", { type: "words, lines, chars" });
 
 // RNG
