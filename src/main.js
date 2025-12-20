@@ -1,5 +1,5 @@
-import { SplitText } from "gsap/SplitText";
 import './style.css';
+import { SplitText } from "gsap/SplitText";
 import { gsap } from "gsap";
 
 // Fonction permettant de créer un délai
