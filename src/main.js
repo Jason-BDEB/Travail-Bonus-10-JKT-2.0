@@ -1,6 +1,6 @@
-import { SplitText } from 'gsap/all';
+import { SplitText } from "gsap/SplitText";
 import './style.css';
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 
 // Fonction permettant de créer un délai
 const delay = ms => new Promise(res => setTimeout(res, ms));
